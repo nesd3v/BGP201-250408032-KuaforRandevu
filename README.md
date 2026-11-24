@@ -40,3 +40,10 @@ Konuyu seçmek, kodu projeye eklemek, uygulamayı telefonda denemek, tasarım
 kararlarını vermek ve GitHub'a yüklemek bana aittir. Her hafta eklenen yeni
 özelliklerde de aynı yöntemi izleyeceğim ve bu beyanı güncel tutacağım.
 
+## Ekran görüntüleri
+![Ana Sayfa](docs/anasayfa.jpeg)
+![Hizmetler](docs/hizmetler.jpeg)
+![Hizmet Detayı](docs/hizmet-detayi.jpeg)
+![Randevu Al](docs/randevu-al.jpeg)
+![Randevularım](docs/randevularim.jpeg)
+
