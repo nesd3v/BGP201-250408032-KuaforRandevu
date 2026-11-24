@@ -29,5 +29,4 @@ npx expo start
 ```
 Telefonda Expo Go ile QR kodu okutun veya Android emülatöründe `a` tuşuna basın.
 
-## Ekran görüntüleri
-`docs/` klasöründe (en az 5 adet eklenecek).
+
