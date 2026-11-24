@@ -20,6 +20,9 @@ export interface Appointment {
   date: string; // 'GG.AA.YYYY' biçiminde gösterim metni
   time: string; // 'SS:DD'
   price: number;
+  customerName: string; // 9. hafta: form alanları
+  phone: string;
+  note: string;
   status: AppointmentStatus;
 }
 

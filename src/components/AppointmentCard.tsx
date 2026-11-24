@@ -29,6 +29,13 @@ export default function AppointmentCard({ appointment, onCancel }: AppointmentCa
         <Text style={styles.meta}>{appointment.time}</Text>
         <Text style={styles.price}>{appointment.price} ₺</Text>
       </View>
+      <View style={styles.infoRow}>
+        <Ionicons name="person-outline" size={16} color={COLORS.textLight} />
+        <Text style={styles.meta}>{appointment.customerName}</Text>
+        <Ionicons name="call-outline" size={16} color={COLORS.textLight} />
+        <Text style={styles.meta}>{appointment.phone}</Text>
+      </View>
+      {appointment.note.length > 0 && <Text style={styles.note}>Not: {appointment.note}</Text>}
       {isActive && (
         <View style={styles.buttonWrap}>
           <CustomButton title="Randevuyu İptal Et" variant="outline" onPress={onCancel} />
@@ -74,5 +81,6 @@ const styles = StyleSheet.create({
     color: COLORS.primary,
     marginLeft: 'auto',
   },
+  note: { fontSize: FONT_SIZES.small, color: COLORS.textLight, marginTop: SPACING.sm },
   buttonWrap: { marginTop: SPACING.md },
 });
