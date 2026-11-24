@@ -29,4 +29,14 @@ npx expo start
 ```
 Telefonda Expo Go ile QR kodu okutun veya Android emülatöründe `a` tuşuna basın.
 
+## Yapay zekâ kullanım beyanı
+
+Bu projeyi geliştirirken yardımcı araç olarak Claude (Anthropic) kullandım.
+Claude'dan proje iskeletini, ekranların ve bileşenlerin kodlarını ve
+tasarım düzenlemelerini hazırlamasını, ayrıca Git ve Expo kullanırken
+karşılaştığım hatalarda yönlendirme yapmasını istedim.
+
+Konuyu seçmek, kodu projeye eklemek, uygulamayı telefonda denemek, tasarım
+kararlarını vermek ve GitHub'a yüklemek bana aittir. Her hafta eklenen yeni
+özelliklerde de aynı yöntemi izleyeceğim ve bu beyanı güncel tutacağım.
 
