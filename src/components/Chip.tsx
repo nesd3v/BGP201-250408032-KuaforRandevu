@@ -8,7 +8,7 @@ interface ChipProps {
   onPress: () => void;
 }
 
-// Gün ve saat seçimi için küçük seçilebilir etiket
+// Saat seçimi için küçük seçilebilir etiket
 export default function Chip({ label, selected, onPress }: ChipProps) {
   return (
     <Pressable onPress={onPress} style={[styles.chip, selected && styles.selected]}>
@@ -19,7 +19,9 @@ export default function Chip({ label, selected, onPress }: ChipProps) {
 
 const styles = StyleSheet.create({
   chip: {
-    paddingVertical: SPACING.sm,
+    minWidth: 76,
+    alignItems: 'center',
+    paddingVertical: SPACING.sm + 2,
     paddingHorizontal: SPACING.md,
     borderRadius: RADIUS.pill,
     borderWidth: 1,

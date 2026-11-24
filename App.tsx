@@ -9,7 +9,7 @@ export default function App() {
     <SafeAreaProvider>
       <AppointmentsProvider>
         <AppNavigator />
-        <StatusBar style="light" />
+        <StatusBar style="dark" />
       </AppointmentsProvider>
     </SafeAreaProvider>
   );

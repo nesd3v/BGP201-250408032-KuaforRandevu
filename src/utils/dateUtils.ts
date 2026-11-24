@@ -2,8 +2,15 @@
 
 const DAY_NAMES: string[] = ['Paz', 'Pzt', 'Sal', 'Çar', 'Per', 'Cum', 'Cmt'];
 
+const MONTH_NAMES: string[] = [
+  'Oca', 'Şub', 'Mar', 'Nis', 'May', 'Haz',
+  'Tem', 'Ağu', 'Eyl', 'Eki', 'Kas', 'Ara',
+];
+
 export interface DayOption {
   label: string; // 'Pzt'
+  dayNumber: string; // '24'
+  month: string; // 'Kas'
   date: string; // '24.11.2026'
 }
 
@@ -22,7 +29,12 @@ export function getNextDays(count: number): DayOption[] {
   while (result.length < count) {
     current.setDate(current.getDate() + 1);
     if (current.getDay() !== 0) {
-      result.push({ label: DAY_NAMES[current.getDay()], date: formatDate(current) });
+      result.push({
+        label: DAY_NAMES[current.getDay()],
+        dayNumber: pad(current.getDate()),
+        month: MONTH_NAMES[current.getMonth()],
+        date: formatDate(current),
+      });
     }
   }
   return result;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Alert, ScrollView, StyleSheet, Text, View } from 'react-native';
 import type { NativeStackScreenProps } from '@react-navigation/native-stack';
 import Chip from '../components/Chip';
+import DateCard from '../components/DateCard';
 import CustomButton from '../components/CustomButton';
 import { COLORS, FONT_SIZES, SPACING } from '../constants/theme';
 import { MOCK_SERVICES, TIME_SLOTS } from '../constants/mockServices';
@@ -48,18 +49,21 @@ export default function BookingScreen({ route, navigation }: Props) {
   return (
     <ScrollView style={styles.container} contentContainerStyle={styles.content}>
       <Text style={styles.title}>{service.name}</Text>
+      <Text style={styles.summary}>
+        {service.durationMin} dk · {service.price} ₺
+      </Text>
 
       <Text style={styles.label}>Gün seçin</Text>
-      <View style={styles.wrap}>
+      <ScrollView horizontal showsHorizontalScrollIndicator={false} style={styles.dateRow}>
         {DAYS.map((d) => (
-          <Chip
+          <DateCard
             key={d.date}
-            label={`${d.label} ${d.date.slice(0, 5)}`}
+            day={d}
             selected={selectedDate === d.date}
             onPress={() => setSelectedDate(d.date)}
           />
         ))}
-      </View>
+      </ScrollView>
 
       <Text style={styles.label}>Saat seçin</Text>
       <View style={styles.wrap}>
@@ -77,6 +81,7 @@ const styles = StyleSheet.create({
   container: { flex: 1, backgroundColor: COLORS.background },
   content: { padding: SPACING.md },
   title: { fontSize: FONT_SIZES.title, fontWeight: '700', color: COLORS.text },
+  summary: { fontSize: FONT_SIZES.body, color: COLORS.textLight, marginTop: SPACING.xs },
   label: {
     fontSize: FONT_SIZES.subtitle,
     fontWeight: '600',
@@ -85,4 +90,5 @@ const styles = StyleSheet.create({
     marginBottom: SPACING.sm,
   },
   wrap: { flexDirection: 'row', flexWrap: 'wrap', marginBottom: SPACING.md },
+  dateRow: { marginBottom: SPACING.md },
 });
