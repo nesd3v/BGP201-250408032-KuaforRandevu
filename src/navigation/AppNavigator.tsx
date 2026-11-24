@@ -14,8 +14,11 @@ export default function AppNavigator() {
     <NavigationContainer>
       <Stack.Navigator
         screenOptions={{
-          headerStyle: { backgroundColor: COLORS.primary },
-          headerTintColor: COLORS.white,
+          headerStyle: { backgroundColor: COLORS.background },
+          headerShadowVisible: false,
+          headerTitleStyle: { fontWeight: '700', color: COLORS.text },
+          headerTintColor: COLORS.text,
+          headerBackButtonDisplayMode: 'minimal', // geri okunun yanında yazı gösterme
         }}
       >
         <Stack.Screen name="MainTabs" component={TabNavigator} options={{ headerShown: false }} />

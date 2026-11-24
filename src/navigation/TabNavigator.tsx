@@ -25,8 +25,11 @@ export default function TabNavigator() {
       screenOptions={({ route }) => ({
         tabBarActiveTintColor: COLORS.primary,
         tabBarInactiveTintColor: COLORS.textLight,
-        headerStyle: { backgroundColor: COLORS.primary },
-        headerTintColor: COLORS.white,
+        headerStyle: { backgroundColor: COLORS.background },
+        headerShadowVisible: false,
+        headerTitleStyle: { fontWeight: '700', color: COLORS.text },
+        headerTintColor: COLORS.text,
+        tabBarStyle: { backgroundColor: COLORS.card, borderTopColor: COLORS.border },
         tabBarIcon: ({ color, size }) => (
           <Ionicons name={TAB_ICONS[route.name]} size={size} color={color} />
         ),
