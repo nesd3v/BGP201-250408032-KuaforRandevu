@@ -40,10 +40,12 @@ Konuyu seçmek, kodu projeye eklemek, uygulamayı telefonda denemek, tasarım
 kararlarını vermek ve GitHub'a yüklemek bana aittir. Her hafta eklenen yeni
 özelliklerde de aynı yöntemi izleyeceğim ve bu beyanı güncel tutacağım.
 
-## Ekran görüntüleri
-![Ana Sayfa](docs/anasayfa.jpeg)
-![Hizmetler](docs/hizmetler.jpeg)
-![Hizmet Detayı](docs/hizmet-detayi.jpeg)
-![Randevu Al](docs/randevu-al.jpeg)
-![Randevularım](docs/randevularim.jpeg)
+## Ekran görüntüleri ve açıklamaları
 
+| Ekran | Açıklama |
+|:---:|:---|
+| <img src="docs/anasayfa.jpeg" width="200"> | **Ana Sayfa**<br>Uygulamanın karşılama ekranıdır. Üstteki koyu kartta salonun tanıtımı ve "Hemen Randevu Al" butonu vardır; butona basınca Hizmetler ekranına geçilir. Altındaki iki kutu toplam hizmet sayısını ve kullanıcının aktif randevu sayısını gösterir. En altta popüler hizmetlerden üçü listelenir, dokununca hizmet detayı açılır. |
+| <img src="docs/hizmetler.jpeg" width="200"> | **Hizmetler**<br>Salonun sunduğu bütün hizmetler listelenir. Her kartta kategori ikonu, hizmet adı, süresi ve fiyatı bulunur. Bir karta dokununca o hizmetin detay ekranı açılır. |
+| <img src="docs/hizmet-detayi.jpeg" width="200"> | **Hizmet Detayı**<br>Seçilen hizmetin kategorisi, adı, açıklaması, süresi ve fiyatı gösterilir. Alttaki "Bu Hizmet İçin Randevu Al" butonu randevu ekranına götürür. |
+| <img src="docs/randevu-al.jpeg" width="200"> | **Randevu Al**<br>Kullanıcı önce yatay kaydırmalı kartlardan gün, sonra saat seçer. Gün ve saat seçilmeden "Randevuyu Onayla" butonu pasif kalır. Onaylayınca randevu kaydedilir ve Randevularım ekranına geçilir. |
+| <img src="docs/randevularim.jpeg" width="200"> | **Randevularım**<br>Alınan randevular kart olarak listelenir. Her kartta hizmet adı, tarih, saat ve fiyat ile "Aktif" veya "İptal" durum etiketi görünür. Aktif randevu "Randevuyu İptal Et" butonuyla iptal edilebilir. Hiç randevu yoksa bilgilendirme mesajı gösterilir. |
