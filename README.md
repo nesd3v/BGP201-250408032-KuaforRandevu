@@ -1,6 +1,6 @@
 # Bayan Kuaförü Randevu Sistemi
 
-**Öğrenci:** Enes Çelil – 250408032
+**Öğrenci:** Enes Çelik – 250408032
 **Ders:** BGP 201 Mobil Programlama – Dönem Projesi
 **Kategori:** Hizmet ve Randevu
 
