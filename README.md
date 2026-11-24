@@ -12,7 +12,7 @@ randevularını görmesini ve iptal etmesini sağlayan React Native mobil uygula
 - [x] Hafta 4–5: 6 ekran, ortak tema dosyası (`src/constants/theme.ts`)
 - [x] Hafta 6: `useState` + `useContext` ile paylaşılan randevu verisi
 - [x] Hafta 7: Stack + Bottom Tab navigasyonu
-- [ ] Hafta 9: Randevu formu ve doğrulama
+- [x] Hafta 9: Randevu formu ve doğrulama
 - [ ] Hafta 10: Resmi tatil API'si (kapalı günler)
 - [ ] Hafta 11: FlatList + arama/filtreleme
 - [ ] Hafta 12: Firebase Authentication + Firestore (ekle/listele/güncelle/sil)
