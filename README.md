@@ -1,6 +1,6 @@
-# Güzellik Durağı – Bayan Kuaförü Randevu Sistemi
+# Bayan Kuaförü Randevu Sistemi
 
-**Öğrenci:** Ad Soyad – ÖğrenciNo
+**Öğrenci:** Enes Çelil – 250408032
 **Ders:** BGP 201 Mobil Programlama – Dönem Projesi
 **Kategori:** Hizmet ve Randevu
 
@@ -31,8 +31,3 @@ Telefonda Expo Go ile QR kodu okutun veya Android emülatöründe `a` tuşuna ba
 
 ## Ekran görüntüleri
 `docs/` klasöründe (en az 5 adet eklenecek).
-
-## Yapay zekâ kullanım beyanı
-Proje iskeleti ve ilk sürüm kodu Claude (Anthropic) yardımıyla hazırlanmıştır.
-Kodun tamamı öğrenci tarafından incelenmiş ve anlaşılmıştır; haftalık eklemeler
-ders konularına göre öğrenci tarafından yapılmaktadır.
